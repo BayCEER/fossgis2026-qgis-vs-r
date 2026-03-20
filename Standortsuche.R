@@ -2,12 +2,16 @@ library(sf)
 library(tidyverse)
 library(osmdata)
 library(mapview)
+library(rstudioapi)
+
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
 
 #### 1. Positiv Fläche ####
 # Manueller Download Geologische Karte Bayern + Verwaltungsgrenzen
 # https://www.lfu.bayern.de/geologie/geo_karten_schriften/dgk25_uab/index.htm
 # Verwaltungsgrenzen
-setwd("~/BayCEERCloud/REZ/Demos/2026_FOSSGIS/")
+
 border = st_read("Data/ALKIS-Vereinfacht/VerwaltungsEinheit.shp") %>%
   filter(art == "Gemeinde" & name == "Bayreuth")
 mapview(border)
