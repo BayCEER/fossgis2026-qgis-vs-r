@@ -2,6 +2,11 @@
 
 Demo zur schrittweise Umsetzung einer räumlichen 2D-Standortanalyse in R und in QGIS.
 
+# Autoren
+
+- Oliver Archner - BayCEER, Universität Bayreuth
+- Dr. Stefan Holzheu - BayCEER, Universität Bayreuth
+
 # Aufgabenstellung
 
 **"Ermittle potentielle Standorte für eine Mülldeponie im Stadtgebiet von Bayreuth"**
@@ -41,7 +46,7 @@ Die Analyse ist in mehrere Teile aufgeteilt. Zur Ausführung der gesamten Analys
 | Analysis II.model3    | Geologie der pot. Flächen        |
 | Analysis III.model3   | Hangneigung der pot. Flächen     |
 
-**Weitere Models**
+Die folgenden Modelle konnten aus Zeitgründen nicht in der Demo gezeigt werden:
 | Model | Beschreibung |
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Build Virtual Raster.model3 | Erzeugen eines Virtuellen Raster Layers aus mehreren Raster Tiles. Erfordert die Installation von [getFileListFromFolder.py](getFileListFromFolder.py) als Algorithm |
