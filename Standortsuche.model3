@@ -396,8 +396,8 @@
   <Option name="help"/>
   <Option value="Version2" type="QString" name="internal_version"/>
   <Option name="modelVariables"/>
-  <Option value="demo" type="QString" name="model_group"/>
-  <Option value="Standortsuche Modular" type="QString" name="model_name"/>
+  <Option value="Demo" type="QString" name="model_group"/>
+  <Option value="Standortsuche" type="QString" name="model_name"/>
   <Option value="" type="QString" name="outputGroup"/>
   <Option name="outputOrder"/>
   <Option type="Map" name="parameterDefinitions">
