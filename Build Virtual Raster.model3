@@ -1,0 +1,252 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option name="children" type="Map">
+    <Option name="gdal:buildvirtualraster_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="gdal:buildvirtualraster" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="523" name="component_pos_x" type="double"/>
+        <Option value="272" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Build virtual raster" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="280" name="component_pos_x" type="double"/>
+      <Option value="285" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="gdal:buildvirtualraster_1" name="id" type="QString"/>
+      <Option name="outputs" type="Map">
+        <Option name="Virtual Raster" type="Map">
+          <Option value="gdal:buildvirtualraster_1" name="child_id" type="QString"/>
+          <Option value="" name="color" type="QString"/>
+          <Option name="comment" type="Map">
+            <Option value="" name="color" type="QString"/>
+            <Option value="" name="component_description" type="QString"/>
+            <Option value="60" name="component_height" type="double"/>
+            <Option value="0" name="component_pos_x" type="double"/>
+            <Option value="0" name="component_pos_y" type="double"/>
+            <Option value="100" name="component_width" type="double"/>
+            <Option value="true" name="outputs_collapsed" type="bool"/>
+            <Option value="true" name="parameters_collapsed" type="bool"/>
+          </Option>
+          <Option value="Virtual Raster" name="component_description" type="QString"/>
+          <Option value="30" name="component_height" type="double"/>
+          <Option value="280" name="component_pos_x" type="double"/>
+          <Option value="375" name="component_pos_y" type="double"/>
+          <Option value="200" name="component_width" type="double"/>
+          <Option name="default_value" type="Map">
+            <Option value="QgsProcessingOutputLayerDefinition" name="class" type="QString"/>
+            <Option name="create_options" type="Map">
+              <Option value="windows-1252" name="fileEncoding" type="QString"/>
+            </Option>
+            <Option name="sink" type="Map">
+              <Option value="true" name="active" type="bool"/>
+              <Option value="1" name="type" type="int"/>
+              <Option value="" name="val" type="QString"/>
+            </Option>
+          </Option>
+          <Option value="true" name="mandatory" type="bool"/>
+          <Option value="Virtual Raster" name="name" type="QString"/>
+          <Option value="OUTPUT" name="output_name" type="QString"/>
+          <Option value="true" name="outputs_collapsed" type="bool"/>
+          <Option value="true" name="parameters_collapsed" type="bool"/>
+        </Option>
+      </Option>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="ADD_ALPHA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="ASSIGN_CRS" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="EXTRA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="script:getfilelistfromfolder_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="PROJ_DIFFERENCE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="RESAMPLING" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="0" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="RESOLUTION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="1" name="static_value" type="int"/>
+          </Option>
+        </Option>
+        <Option name="SEPARATE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
+          </Option>
+        </Option>
+        <Option name="SRC_NODATA" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="invalid"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="script:getfilelistfromfolder_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="script:getfilelistfromfolder" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="476" name="component_pos_x" type="double"/>
+        <Option value="147" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="GetLayerFormPath" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="280" name="component_pos_x" type="double"/>
+      <Option value="195" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="script:getfilelistfromfolder_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXTENSION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value=".tif" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT_FOLDER" type="List">
+          <Option type="Map">
+            <Option value="dgm_path" name="parameter_name" type="QString"/>
+            <Option value="0" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="designerParameterValues" type="Map">
+    <Option name="vr" type="QgsProcessingOutputLayerDefinition">
+      <Option type="Map">
+        <Option name="create_options" type="Map">
+          <Option value="windows-1252" name="fileEncoding" type="QString"/>
+        </Option>
+        <Option name="sink" type="Map">
+          <Option value="true" name="active" type="bool"/>
+          <Option value="1" name="type" type="int"/>
+          <Option value="TEMPORARY_OUTPUT" name="val" type="QString"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option name="groupBoxes"/>
+  <Option name="help"/>
+  <Option value="Version2" name="internal_version" type="QString"/>
+  <Option name="modelVariables"/>
+  <Option value="Demo" name="model_group" type="QString"/>
+  <Option value="Build Virtual Raster" name="model_name" type="QString"/>
+  <Option value="" name="outputGroup" type="QString"/>
+  <Option name="outputOrder"/>
+  <Option name="parameterDefinitions" type="Map">
+    <Option name="dgm_path" type="Map">
+      <Option value="1" name="behavior" type="int"/>
+      <Option value="C:\Users\oliver\ownCloud\REZ\Demos\2026_FOSSGIS\Data\DGM1" name="default" type="QString"/>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="DGM Path" name="description" type="QString"/>
+      <Option value="" name="extension" type="QString"/>
+      <Option value="All files (*.*)" name="filefilter" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata"/>
+      <Option value="dgm_path" name="name" type="QString"/>
+      <Option value="file" name="parameter_type" type="QString"/>
+    </Option>
+    <Option name="virtual_raster" type="Map">
+      <Option value="true" name="create_by_default" type="bool"/>
+      <Option name="default" type="QgsProcessingOutputLayerDefinition">
+        <Option type="Map">
+          <Option name="create_options" type="Map">
+            <Option value="windows-1252" name="fileEncoding" type="QString"/>
+          </Option>
+          <Option name="sink" type="Map">
+            <Option value="true" name="active" type="bool"/>
+            <Option value="1" name="type" type="int"/>
+            <Option value="" name="val" type="QString"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option name="defaultGui" type="invalid"/>
+      <Option value="Virtual Raster" name="description" type="QString"/>
+      <Option value="0" name="flags" type="int"/>
+      <Option value="" name="help" type="QString"/>
+      <Option name="metadata" type="Map">
+        <Option value="gdal:buildvirtualraster_1" name="_modelChildId" type="QString"/>
+        <Option value="Virtual Raster" name="_modelChildOutputName" type="QString"/>
+        <Option value="gdal" name="_modelChildProvider" type="QString"/>
+      </Option>
+      <Option value="virtual_raster" name="name" type="QString"/>
+      <Option value="rasterDestination" name="parameter_type" type="QString"/>
+      <Option value="false" name="supports_non_file_outputs" type="bool"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option name="parameters" type="Map">
+    <Option name="dgm_path" type="Map">
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="415" name="component_pos_x" type="double"/>
+        <Option value="29" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="dgm_path" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="280" name="component_pos_x" type="double"/>
+      <Option value="105" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option value="dgm_path" name="name" type="QString"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+    </Option>
+  </Option>
+</Option>

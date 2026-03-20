@@ -1,0 +1,393 @@
+<!DOCTYPE model>
+<Option type="Map">
+  <Option type="Map" name="children">
+    <Option type="Map" name="native:intersection_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="native:intersection" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="565" type="double" name="component_pos_x"/>
+        <Option value="525" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Intersection II" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="520" type="double" name="component_pos_x"/>
+      <Option value="195" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="native:intersection_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="geology_final">
+          <Option value="native:intersection_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="0" type="double" name="component_pos_x"/>
+            <Option value="0" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="geology_final" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="760" type="double" name="component_pos_x"/>
+          <Option value="225" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="invalid" name="default_value"/>
+          <Option value="false" type="bool" name="mandatory"/>
+          <Option value="geology_final" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="GRID_SIZE">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="positive_area" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="StringList" name="static_value">
+              <Option value="" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERLAY">
+          <Option type="Map">
+            <Option value="pot_area" type="QString" name="parameter_name"/>
+            <Option value="0" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERLAY_FIELDS">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="StringList" name="static_value">
+              <Option value="" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="OVERLAY_FIELDS_PREFIX">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="invalid" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:exportaddgeometrycolumns_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:exportaddgeometrycolumns" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="749" type="double" name="component_pos_x"/>
+        <Option value="429" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Add geometry attributes" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="525" type="double" name="component_pos_x"/>
+      <Option value="285" type="double" name="component_pos_y"/>
+      <Option value="210.00000000000003" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:exportaddgeometrycolumns_1" type="QString" name="id"/>
+      <Option name="outputs"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CALC_METHOD">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="0" type="int" name="static_value"/>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="native:intersection_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option type="Map" name="qgis:statisticsbycategories_1">
+      <Option value="true" type="bool" name="active"/>
+      <Option name="alg_config"/>
+      <Option value="qgis:statisticsbycategories" type="QString" name="alg_id"/>
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="935" type="double" name="component_pos_x"/>
+        <Option value="738" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="Statistics by categories" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="520" type="double" name="component_pos_x"/>
+      <Option value="375" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option value="qgis:statisticsbycategories_1" type="QString" name="id"/>
+      <Option type="Map" name="outputs">
+        <Option type="Map" name="s_geology">
+          <Option value="qgis:statisticsbycategories_1" type="QString" name="child_id"/>
+          <Option value="" type="QString" name="color"/>
+          <Option type="Map" name="comment">
+            <Option value="" type="QString" name="color"/>
+            <Option value="" type="QString" name="component_description"/>
+            <Option value="60" type="double" name="component_height"/>
+            <Option value="-1025" type="double" name="component_pos_x"/>
+            <Option value="-232" type="double" name="component_pos_y"/>
+            <Option value="100" type="double" name="component_width"/>
+            <Option value="true" type="bool" name="outputs_collapsed"/>
+            <Option value="true" type="bool" name="parameters_collapsed"/>
+          </Option>
+          <Option value="s_geology" type="QString" name="component_description"/>
+          <Option value="30" type="double" name="component_height"/>
+          <Option value="520" type="double" name="component_pos_x"/>
+          <Option value="465" type="double" name="component_pos_y"/>
+          <Option value="200" type="double" name="component_width"/>
+          <Option type="Map" name="default_value">
+            <Option value="QgsProcessingOutputLayerDefinition" type="QString" name="class"/>
+            <Option type="Map" name="create_options">
+              <Option value="windows-1252" type="QString" name="fileEncoding"/>
+            </Option>
+            <Option type="Map" name="sink">
+              <Option value="true" type="bool" name="active"/>
+              <Option value="1" type="int" name="type"/>
+              <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+            </Option>
+          </Option>
+          <Option value="true" type="bool" name="mandatory"/>
+          <Option value="s_geology" type="QString" name="name"/>
+          <Option value="OUTPUT" type="QString" name="output_name"/>
+          <Option value="true" type="bool" name="outputs_collapsed"/>
+          <Option value="true" type="bool" name="parameters_collapsed"/>
+        </Option>
+      </Option>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="CATEGORIES_FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option type="StringList" name="static_value">
+              <Option value="LEGEINHEIT" type="QString"/>
+            </Option>
+          </Option>
+        </Option>
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option value="qgis:exportaddgeometrycolumns_1" type="QString" name="child_id"/>
+            <Option value="OUTPUT" type="QString" name="output_name"/>
+            <Option value="1" type="int" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="VALUES_FIELD_NAME">
+          <Option type="Map">
+            <Option value="2" type="int" name="source"/>
+            <Option value="area" type="QString" name="static_value"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="Map" name="designerParameterValues">
+    <Option type="QgsProcessingOutputLayerDefinition" name="geology_final">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+    <Option value="Matching_features_64d329c6_65ed_4e6f_be1c_df7cb21a8101" type="QString" name="positive_area"/>
+    <Option value="Matching_features_ca4ebd80_374c_4f96_86bb_3b484b34d85b" type="QString" name="pot_area"/>
+    <Option type="QgsProcessingOutputLayerDefinition" name="s_geology">
+      <Option type="Map">
+        <Option type="Map" name="create_options">
+          <Option value="windows-1252" type="QString" name="fileEncoding"/>
+        </Option>
+        <Option type="Map" name="sink">
+          <Option value="true" type="bool" name="active"/>
+          <Option value="1" type="int" name="type"/>
+          <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+        </Option>
+      </Option>
+    </Option>
+  </Option>
+  <Option type="List" name="groupBoxes">
+    <Option type="Map">
+      <Option value="" type="QString" name="color"/>
+      <Option value="Analysis II" type="QString" name="component_description"/>
+      <Option value="480" type="double" name="component_height"/>
+      <Option value="495.00000000000006" type="double" name="component_pos_x"/>
+      <Option value="330" type="double" name="component_pos_y"/>
+      <Option value="810.0000000000001" type="double" name="component_width"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+      <Option value="{b9d5feb2-8871-49e6-8476-c7266dd827ce}" type="QString" name="uuid"/>
+    </Option>
+  </Option>
+  <Option name="help"/>
+  <Option value="Version2" type="QString" name="internal_version"/>
+  <Option name="modelVariables"/>
+  <Option value="Demo" type="QString" name="model_group"/>
+  <Option value="Analysis II" type="QString" name="model_name"/>
+  <Option value="" type="QString" name="outputGroup"/>
+  <Option name="outputOrder"/>
+  <Option type="Map" name="parameterDefinitions">
+    <Option type="Map" name="geology_final">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="geology_final" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="native:intersection_1" type="QString" name="_modelChildId"/>
+        <Option value="geology_final" type="QString" name="_modelChildOutputName"/>
+        <Option value="native" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="geology_final" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+    <Option type="Map" name="positive_area">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="positive_area" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="positive_area" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="pot_area">
+      <Option type="List" name="data_types">
+        <Option value="2" type="int"/>
+      </Option>
+      <Option type="invalid" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="pot_area" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option name="metadata"/>
+      <Option value="pot_area" type="QString" name="name"/>
+      <Option value="vector" type="QString" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="s_geology">
+      <Option value="true" type="bool" name="create_by_default"/>
+      <Option value="-1" type="int" name="data_type"/>
+      <Option type="QgsProcessingOutputLayerDefinition" name="default">
+        <Option type="Map">
+          <Option type="Map" name="create_options">
+            <Option value="windows-1252" type="QString" name="fileEncoding"/>
+          </Option>
+          <Option type="Map" name="sink">
+            <Option value="true" type="bool" name="active"/>
+            <Option value="1" type="int" name="type"/>
+            <Option value="TEMPORARY_OUTPUT" type="QString" name="val"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="invalid" name="defaultGui"/>
+      <Option value="s_geology" type="QString" name="description"/>
+      <Option value="0" type="int" name="flags"/>
+      <Option value="" type="QString" name="help"/>
+      <Option type="Map" name="metadata">
+        <Option value="qgis:statisticsbycategories_1" type="QString" name="_modelChildId"/>
+        <Option value="s_geology" type="QString" name="_modelChildOutputName"/>
+        <Option value="qgis" type="QString" name="_modelChildProvider"/>
+      </Option>
+      <Option value="s_geology" type="QString" name="name"/>
+      <Option value="sink" type="QString" name="parameter_type"/>
+      <Option value="false" type="bool" name="supports_append"/>
+      <Option value="true" type="bool" name="supports_non_file_outputs"/>
+    </Option>
+  </Option>
+  <Option name="parameterOrder"/>
+  <Option type="Map" name="parameters">
+    <Option type="Map" name="positive_area">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="540" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="positive_area" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="220" type="double" name="component_pos_x"/>
+      <Option value="135" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="positive_area" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="pot_area">
+      <Option value="" type="QString" name="color"/>
+      <Option type="Map" name="comment">
+        <Option value="" type="QString" name="color"/>
+        <Option value="" type="QString" name="component_description"/>
+        <Option value="60" type="double" name="component_height"/>
+        <Option value="320" type="double" name="component_pos_x"/>
+        <Option value="15" type="double" name="component_pos_y"/>
+        <Option value="100" type="double" name="component_width"/>
+        <Option value="true" type="bool" name="outputs_collapsed"/>
+        <Option value="true" type="bool" name="parameters_collapsed"/>
+      </Option>
+      <Option value="pot_area" type="QString" name="component_description"/>
+      <Option value="30" type="double" name="component_height"/>
+      <Option value="220" type="double" name="component_pos_x"/>
+      <Option value="195" type="double" name="component_pos_y"/>
+      <Option value="200" type="double" name="component_width"/>
+      <Option value="pot_area" type="QString" name="name"/>
+      <Option value="true" type="bool" name="outputs_collapsed"/>
+      <Option value="true" type="bool" name="parameters_collapsed"/>
+    </Option>
+  </Option>
+</Option>
