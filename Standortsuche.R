@@ -2,15 +2,12 @@ library(sf)
 library(tidyverse)
 library(osmdata)
 library(mapview)
-library(rstudioapi)
-
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
-
 
 #### 1. Positiv Fläche ####
 # Manueller Download Geologische Karte Bayern + Verwaltungsgrenzen
 # https://www.lfu.bayern.de/geologie/geo_karten_schriften/dgk25_uab/index.htm
 # Verwaltungsgrenzen
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 border = st_read("Data/ALKIS-Vereinfacht/VerwaltungsEinheit.shp") %>%
   filter(art == "Gemeinde" & name == "Bayreuth")
@@ -153,11 +150,14 @@ slope_final = as.polygons(slope$kat) %>%
   )) %>%
   group_by(kat) %>%
   summarize(area = sum(st_area(geometry))) %>%
-  mutate(Slope = sprintf("%s (%.0f ha)", kat, area / 10000))
-
-slope_final$Slope = factor(slope_final$Slope, levels = slope_final$Slope) ## Order!
+  mutate(Slope = sprintf("%s (%.0f ha)", kat, area / 10000)) 
 
 mapview(slope_final, zcol='Slope')
+slope_final$Slope ## Text
+slope_final = slope_final %>% mutate(Slope = factor(Slope, levels = Slope)) ## Order!
+slope_final$Slope ## Factor
+mapview(slope_final, zcol='Slope')
+
 
 
 # Plot 
