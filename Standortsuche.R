@@ -25,8 +25,8 @@ mapview(positive_area, zcol='LEGEINHEIT')
 
 
 #### 2. Negativ Flächen ####
-## OpenStreetMap data
-bbox = border %>% st_buffer(1000) %>% st_bbox() %>% st_transform(4326)
+## OpenStreetMap data download 
+bbox = border %>% st_buffer(1000) %>% st_transform(4326) %>% st_bbox() 
 st_crs(bbox) ## EPSG 4326
 river = bbox %>% opq() %>%
   add_osm_feature(key = "waterway") %>%
@@ -82,6 +82,9 @@ geology_final = geology_final %>%
   mutate(Geologie = sprintf("%s (%.0f ha)", LEGEINHEIT, area / 10000))
 
 mapview(geology_final, zcol='Geologie')
+
+# Speichern als Shape File
+st_write(geology_final,"geology_final_R.shp")
 
 # Plot (ggplot) 
 limits = border %>% st_bbox()
